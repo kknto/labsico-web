@@ -7,6 +7,30 @@ export type QuotePayload = {
   comments?: string;
 };
 
+const limits = {
+  name: 100,
+  phone: 40,
+  email: 160,
+  project: 160,
+  service: 180,
+  comments: 800
+};
+
+function sanitize(value: string | undefined, maxLength: number) {
+  return value?.replace(/\s+/g, " ").trim().slice(0, maxLength);
+}
+
+export function sanitizeQuotePayload(payload: Partial<QuotePayload>): Partial<QuotePayload> {
+  return {
+    name: sanitize(payload.name, limits.name),
+    phone: sanitize(payload.phone, limits.phone),
+    email: sanitize(payload.email, limits.email),
+    project: sanitize(payload.project, limits.project),
+    service: sanitize(payload.service, limits.service),
+    comments: sanitize(payload.comments, limits.comments)
+  };
+}
+
 export function normalizeWhatsAppNumber(value: string) {
   return value.replace(/[^\d]/g, "");
 }
@@ -42,6 +66,9 @@ export function validateQuotePayload(payload: Partial<QuotePayload>) {
   }
   if (!payload.service?.trim()) {
     errors.service = "Selecciona o describe el servicio requerido.";
+  }
+  if (payload.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email)) {
+    errors.email = "Indica un correo valido.";
   }
 
   return errors;

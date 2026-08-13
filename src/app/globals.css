@@ -413,14 +413,6 @@ p {
   gap: 16px;
 }
 
-.pending-services {
-  display: grid;
-  gap: 24px;
-  margin-top: 44px;
-  padding-top: 44px;
-  border-top: 1px solid var(--line);
-}
-
 .internal-access-shell {
   max-width: 760px;
 }

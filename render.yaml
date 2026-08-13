@@ -3,9 +3,12 @@ services:
     name: labsico-web
     runtime: node
     plan: free
-    autoDeploy: true
+    autoDeployTrigger: commit
     buildCommand: npm install && npm run build
     startCommand: npm run start:render
+    healthCheckPath: /api/health
+    domains:
+      - labsico.tech
     envVars:
       - key: NODE_VERSION
         value: 22
@@ -22,9 +25,9 @@ services:
       - key: NEXT_PUBLIC_LABSICO_MAP_URL
         value: "https://www.google.com/maps/search/?api=1&query=Labsico%20Laboratorio%20al%20servicio%20de%20la%20construccion%20Cancun"
       - key: INTERNAL_ACCESS_CODE
-        value: "labsico-interno"
-      - key: INTERNAL_ACCESS_SECRET
         sync: false
+      - key: INTERNAL_ACCESS_SECRET
+        generateValue: true
       - key: INTERNAL_COOKIE_SECURE
         value: "true"
       - key: INTERNAL_REPORTES_URL

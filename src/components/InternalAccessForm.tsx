@@ -22,7 +22,7 @@ export function InternalAccessForm() {
     setLoading(false);
 
     if (!response.ok) {
-      setError("Clave invalida o acceso no autorizado.");
+      setError("Acceso no autorizado. Verifica la clave e intenta nuevamente.");
       return;
     }
 
@@ -44,6 +44,8 @@ export function InternalAccessForm() {
           value={code}
           onChange={(event) => setCode(event.target.value)}
           autoComplete="current-password"
+          maxLength={256}
+          required
         />
       </div>
       {error ? <span className="error-text">{error}</span> : null}

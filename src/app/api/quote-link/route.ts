@@ -1,9 +1,22 @@
 import { NextResponse } from "next/server";
 import { publicContact } from "@/content/company";
-import { buildWhatsAppUrl, validateQuotePayload, type QuotePayload } from "@/lib/contact";
+import {
+  buildWhatsAppUrl,
+  sanitizeQuotePayload,
+  validateQuotePayload,
+  type QuotePayload
+} from "@/lib/contact";
 
 export async function POST(request: Request) {
-  const payload = (await request.json()) as Partial<QuotePayload>;
+  let rawPayload: Partial<QuotePayload>;
+
+  try {
+    rawPayload = (await request.json()) as Partial<QuotePayload>;
+  } catch {
+    return NextResponse.json({ errors: { form: "Solicitud invalida." } }, { status: 400 });
+  }
+
+  const payload = sanitizeQuotePayload(rawPayload);
   const errors = validateQuotePayload(payload);
 
   if (Object.keys(errors).length > 0) {

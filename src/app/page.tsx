@@ -46,8 +46,8 @@ export default function HomePage() {
         <div className="site-shell">
           <SectionHeader
             eyebrow="Catalogo tecnico"
-            title="Servicios listos para crecer sin perder orden"
-            description="La estructura permite agregar nuevas pruebas, normas y requisitos desde archivos versionados, manteniendo busqueda, modales y cotizacion conectados al mismo catalogo."
+            title="Servicios organizados por especialidad"
+            description="Encuentra pruebas, normas y requisitos desde un catalogo consultable, con fichas tecnicas y cotizacion conectadas al servicio seleccionado."
           />
           <div className="grid grid--3">
             {featuredServices.slice(0, 6).map((service) => (
@@ -72,7 +72,7 @@ export default function HomePage() {
           <SectionHeader
             eyebrow="Acreditacion"
             title="Base institucional para decisiones tecnicas"
-            description="La nueva web separa identidad, acreditaciones, servicios y proyectos para que cada bloque pueda mantenerse sin duplicar informacion."
+            description="Acreditaciones, referencias normativas y experiencia documentada para respaldar el control de calidad en obra."
           />
           <div className="grid grid--2">
             {accreditations.map((item) => (

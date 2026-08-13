@@ -19,29 +19,32 @@ La app corre en `http://localhost:3000`.
 - `npm run build`: build de produccion.
 - `npm run start:render`: start command para Render Web Service.
 
-## Contenido editable
+## Contenido
 
 El catalogo vive en `src/content/services.ts`. Para agregar una prueba, crear un nuevo `ServiceItem` dentro de su categoria con `id` y `slug` unicos.
 
-La primera version no depende de imagenes de fondo. Cuando existan fotografias finales, deben agregarse como assets propios y referenciarse desde los componentes correspondientes.
-
 ## Accesos internos
 
-La ruta `/accesos` concentra plataformas internas y requiere clave de acceso. Las plataformas configuradas por defecto son:
+La ruta `/accesos` concentra plataformas internas y requiere clave de acceso. Las plataformas activas son:
 
 - Reportes de clientes: `https://reportes-seybaplaya.onrender.com`
 - Plataforma de deslizados: `https://deslizados-labsico.onrender.com`
-- Gestion de la empresa: pendiente de URL
 
-El dominio adquirido para concentrar los desarrollos es `labsico.tech`; falta configurar DNS/dominios personalizados cuando se defina el despliegue final.
+El dominio principal del sitio es `labsico.tech`.
+
+Variables obligatorias para el acceso interno en produccion:
+
+- `INTERNAL_ACCESS_CODE`: clave privada de ingreso.
+- `INTERNAL_ACCESS_SECRET`: secreto largo para firmar la cookie de sesion.
+- `INTERNAL_COOKIE_SECURE=true`: fuerza cookies seguras sobre HTTPS.
 
 ## Despliegue en Render
 
-El repositorio incluye `render.yaml` para crear el servicio desde Blueprint.
+El repositorio incluye `render.yaml` para crear y mantener el Web Service desde Blueprint.
 
 1. Subir este repositorio a GitHub.
 2. En Render, elegir `New +` > `Blueprint`.
 3. Conectar `kknto/labsico-web`.
 4. Confirmar el servicio `labsico-web`.
-5. Cambiar `INTERNAL_ACCESS_CODE` e `INTERNAL_ACCESS_SECRET` en Render antes de compartir el acceso interno.
-6. Cuando exista la plataforma de gestion, configurar `INTERNAL_GESTION_URL`.
+5. Definir `INTERNAL_ACCESS_CODE` durante la creacion del Blueprint o desde Environment.
+6. Verificar el dominio `labsico.tech` en la seccion Custom Domains de Render.

@@ -4,7 +4,7 @@ const REPORTES_URL = process.env.INTERNAL_REPORTES_URL || "https://reportes-seyb
 const SLIPFORM_URL = process.env.INTERNAL_SLIPFORM_URL || "https://deslizados-labsico.onrender.com";
 const GESTION_URL = process.env.INTERNAL_GESTION_URL;
 
-export const internalPlatforms: InternalPlatform[] = [
+const configuredPlatforms: InternalPlatform[] = [
   {
     id: "reportes-clientes",
     name: "Reportes de clientes",
@@ -31,8 +31,10 @@ export const internalPlatforms: InternalPlatform[] = [
     description:
       "Acceso a la plataforma operativa para gestion financiera, divisiones, gastos, ingresos y cierres.",
     owner: "Direccion / Administracion",
-    status: GESTION_URL ? "Disponible" : "Pendiente de configurar URL",
+    status: "Disponible",
     url: GESTION_URL,
     envKey: "INTERNAL_GESTION_URL"
   }
 ];
+
+export const internalPlatforms = configuredPlatforms.filter((platform) => Boolean(platform.url));

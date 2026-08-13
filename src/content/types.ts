@@ -46,13 +46,6 @@ export type CompanyValue = {
   description: string;
 };
 
-export type PendingServiceGroup = {
-  name: string;
-  description: string;
-  status: string;
-  items: string[];
-};
-
 export type InternalPlatform = {
   id: string;
   name: string;

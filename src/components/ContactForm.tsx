@@ -58,6 +58,8 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
             value={payload.name}
             onChange={(event) => setPayload({ ...payload, name: event.target.value })}
             autoComplete="name"
+            maxLength={100}
+            required
           />
           {errors.name ? <span className="error-text">{errors.name}</span> : null}
         </div>
@@ -68,6 +70,8 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
             value={payload.phone}
             onChange={(event) => setPayload({ ...payload, phone: event.target.value })}
             autoComplete="tel"
+            maxLength={40}
+            required
           />
           {errors.phone ? <span className="error-text">{errors.phone}</span> : null}
         </div>
@@ -81,7 +85,9 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
             value={payload.email}
             onChange={(event) => setPayload({ ...payload, email: event.target.value })}
             autoComplete="email"
+            maxLength={160}
           />
+          {errors.email ? <span className="error-text">{errors.email}</span> : null}
         </div>
         <div className="field">
           <label htmlFor="project">Proyecto</label>
@@ -89,6 +95,7 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
             id="project"
             value={payload.project}
             onChange={(event) => setPayload({ ...payload, project: event.target.value })}
+            maxLength={160}
           />
         </div>
       </div>
@@ -114,6 +121,7 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
           id="comments"
           value={payload.comments}
           onChange={(event) => setPayload({ ...payload, comments: event.target.value })}
+          maxLength={800}
         />
       </div>
       {errors.form ? <span className="error-text">{errors.form}</span> : null}
