@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: labsico-web
+    runtime: node
+    plan: free
+    autoDeploy: true
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start:render
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NEXT_TELEMETRY_DISABLED
+        value: "1"
+      - key: NEXT_PUBLIC_LABSICO_WHATSAPP
+        value: "5219982134937"
+      - key: NEXT_PUBLIC_LABSICO_EMAIL
+        value: "contacto@labsico.mx"
+      - key: NEXT_PUBLIC_LABSICO_PHONE
+        value: "+52 1 998-213-4937"
+      - key: NEXT_PUBLIC_LABSICO_ADDRESS
+        value: "SM.99, MZA. 58 LT. 21 Calle 6, Mpio. Benito Juárez, CP 77536, Cancún, Quintana Roo"
+      - key: NEXT_PUBLIC_LABSICO_MAP_URL
+        value: "https://www.google.com/maps/search/?api=1&query=Labsico%20Laboratorio%20al%20servicio%20de%20la%20construccion%20Cancun"
+      - key: INTERNAL_ACCESS_CODE
+        value: "labsico-interno"
+      - key: INTERNAL_ACCESS_SECRET
+        sync: false
+      - key: INTERNAL_COOKIE_SECURE
+        value: "true"
+      - key: INTERNAL_REPORTES_URL
+        value: "https://reportes-seybaplaya.onrender.com"
+      - key: INTERNAL_SLIPFORM_URL
+        value: "https://deslizados-labsico.onrender.com"
+      - key: INTERNAL_GESTION_URL
+        sync: false
