@@ -6,10 +6,10 @@ export const publicContact = {
   phone: process.env.NEXT_PUBLIC_LABSICO_PHONE || "+52 1 998-213-4937",
   address:
     process.env.NEXT_PUBLIC_LABSICO_ADDRESS ||
-    "SM.99, MZA. 58 LT. 21 Calle 6, Mpio. Benito Juarez, CP 77536, Cancun, Quintana Roo",
+    "C. 6 99, 77536 Cancun, Q.R. Plus Code 44V9+QX Cancun, Quintana Roo",
   mapUrl:
     process.env.NEXT_PUBLIC_LABSICO_MAP_URL ||
-    "https://www.google.com/maps/search/?api=1&query=Labsico%20Laboratorio%20al%20servicio%20de%20la%20construccion%20Cancun"
+    "https://www.google.com/maps/search/?api=1&query=C.%206%2099%2C%2077536%20Cancun%2C%20Q.R.%2044V9%2BQX%20Cancun%2C%20Quintana%20Roo"
 };
 
 export const accreditations: Accreditation[] = [
