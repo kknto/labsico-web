@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import { BadgeCheck, ClipboardCheck, HardHat, Microscope } from "lucide-react";
 import { SectionHeader } from "@/components/SectionHeader";
 import { accreditations, companyValues } from "@/content/company";
+
+export const metadata: Metadata = {
+  title: "Nosotros | LABSICO",
+  description:
+    "Conoce la capacidad tecnica, valores, laboratorio y enfoque de control de calidad de LABSICO para proyectos de construccion."
+};
 
 const capabilities = [
   {

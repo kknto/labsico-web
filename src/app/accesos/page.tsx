@@ -15,6 +15,8 @@ export const metadata: Metadata = {
   }
 };
 
+const platformGroups = ["Reportes", "Obra", "Administracion", "Documentos"] as const;
+
 export default async function InternalAccessPage() {
   const cookieStore = await cookies();
   const hasAccess = verifyInternalAccessToken(cookieStore.get(INTERNAL_ACCESS_COOKIE)?.value);
@@ -45,28 +47,49 @@ export default async function InternalAccessPage() {
           />
           <InternalLogoutButton />
         </div>
-        <div className="grid grid--3">
-          {internalPlatforms.map((platform) => (
-            <article className="card info-card internal-platform-card" key={platform.id}>
+        <div className="internal-platform-groups">
+          {platformGroups.map((group) => {
+            const platforms = internalPlatforms.filter((platform) => platform.group === group);
+
+            if (!platforms.length) {
+              return null;
+            }
+
+            return (
+              <section className="internal-platform-group" key={group} aria-labelledby={`group-${group}`}>
+                <h2 id={`group-${group}`}>{group}</h2>
+                <div className="grid grid--3">
+                  {platforms.map((platform) => (
+                    <article className="card info-card internal-platform-card" key={platform.id}>
+                      <LockKeyhole color="var(--brand-blue)" size={26} aria-hidden="true" />
+                      <div>
+                        <span className="tag">{platform.status}</span>
+                        <h3>{platform.name}</h3>
+                      </div>
+                      <p>{platform.description}</p>
+                      <p>
+                        <strong>Responsable:</strong> {platform.owner}
+                      </p>
+                      <a className="button button--primary" href={platform.url} target="_blank" rel="noreferrer">
+                        Abrir plataforma
+                        <ExternalLink size={17} aria-hidden="true" />
+                      </a>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            );
+          })}
+          {!internalPlatforms.length ? (
+            <article className="card info-card">
               <LockKeyhole color="var(--brand-blue)" size={26} aria-hidden="true" />
               <div>
-                <span className="tag">{platform.status}</span>
-                <h3>{platform.name}</h3>
+                <span className="tag">Sin plataformas activas</span>
+                <h3>Acceso protegido</h3>
               </div>
-              <p>{platform.description}</p>
-              <p>
-                <strong>Responsable:</strong> {platform.owner}
-              </p>
-              {platform.url ? (
-                <a className="button button--primary" href={platform.url} target="_blank" rel="noreferrer">
-                  Abrir plataforma
-                  <ExternalLink size={17} aria-hidden="true" />
-                </a>
-              ) : (
-                <p className="error-text">Configura {platform.envKey} en Render para activar este acceso.</p>
-              )}
+              <p>Los accesos disponibles se muestran unicamente al personal autorizado cuando estan activos.</p>
             </article>
-          ))}
+          ) : null}
         </div>
       </div>
     </section>

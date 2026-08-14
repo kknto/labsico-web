@@ -23,6 +23,15 @@ La app corre en `http://localhost:3000`.
 
 El catalogo vive en `src/content/services.ts`. Para agregar una prueba, crear un nuevo `ServiceItem` dentro de su categoria con `id` y `slug` unicos.
 
+Rutas principales publicadas:
+
+- `/servicios`: catalogo completo con busqueda y fichas.
+- `/servicios/[categoria]`: paginas SEO por categoria de servicio.
+- `/acreditacion`: acreditacion, referencias normativas y alcance tecnico.
+- `/contacto`: solicitud de cotizacion por WhatsApp o correo prellenado.
+
+La app genera `sitemap.xml` y `robots.txt` desde el catalogo versionado.
+
 ## Accesos internos
 
 La ruta `/accesos` concentra plataformas internas y requiere clave de acceso. Las plataformas activas son:

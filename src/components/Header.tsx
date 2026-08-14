@@ -3,6 +3,7 @@ import { MessageCircle } from "lucide-react";
 
 const navItems = [
   { href: "/servicios", label: "Servicios" },
+  { href: "/acreditacion", label: "Acreditacion" },
   { href: "/proyectos", label: "Proyectos" },
   { href: "/nosotros", label: "Nosotros" },
   { href: "/contacto", label: "Contacto" },

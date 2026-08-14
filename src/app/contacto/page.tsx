@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { SectionHeader } from "@/components/SectionHeader";
 import { publicContact } from "@/content/company";
+
+export const metadata: Metadata = {
+  title: "Contacto y cotizacion | LABSICO",
+  description:
+    "Solicita cotizacion de pruebas de concreto, agregados, acero, soldadura, terraceria, agua y mecanica de suelos con LABSICO."
+};
 
 type ContactPageProps = {
   searchParams: Promise<{
@@ -19,7 +26,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
         <SectionHeader
           eyebrow="Contacto"
           title="Solicita una cotizacion tecnica"
-          description="Comparte el servicio, datos del proyecto y comentarios. La web prepara un mensaje de WhatsApp sin guardar informacion en base de datos."
+          description="Comparte el servicio, datos del proyecto y comentarios. La web prepara la solicitud para enviarla por WhatsApp o correo sin guardar informacion en base de datos."
         />
         <div className="contact-band">
           <aside className="map-panel">

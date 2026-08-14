@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { ChevronRight, Search } from "lucide-react";
 import { getAllServices, getSortedCategories } from "@/lib/catalog";
 import type { ServiceItem } from "@/content/types";
@@ -66,16 +67,18 @@ export function ServicesExplorer({ initialCategory, initialService }: SearchPara
               <span>{services.length}</span>
             </button>
             {categories.map((category) => (
-              <button
-                className="category-button"
-                type="button"
-                key={category.id}
-                aria-pressed={activeCategory === category.id}
-                onClick={() => setActiveCategory(category.id)}
-              >
-                {category.name}
-                <span>{category.items.length}</span>
-              </button>
+              <div className="category-entry" key={category.id}>
+                <button
+                  className="category-button"
+                  type="button"
+                  aria-pressed={activeCategory === category.id}
+                  onClick={() => setActiveCategory(category.id)}
+                >
+                  {category.name}
+                  <span>{category.items.length}</span>
+                </button>
+                <Link href={`/servicios/${category.id}`}>Pagina de categoria</Link>
+              </div>
             ))}
           </div>
         </aside>

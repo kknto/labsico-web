@@ -19,11 +19,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-111-ONNCCE-2014 agregados"
         ],
         "scope": "Diseño de curvas granulometricas, pueden ser unos tamices, en ese colocamos agregado para cribarlo e ir obteniendo las curvas.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra representativa de agregado fino o grueso, identificada por banco, lote, frente o acopio.",
+        "estimatedTime": "Programacion de 2 a 5 dias habiles segun volumen, ensaye y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Muestreo, preparacion y ensaye conforme a la norma indicada para el material recibido.",
+        "clientPreparation": [
+          "Identificar banco, lote o acopio.",
+          "Evitar contaminacion durante traslado.",
+          "Enviar datos de proyecto y uso del agregado."
+        ],
+        "quoteChecklist": [
+          "Tipo de agregado",
+          "Ubicacion del banco o acopio",
+          "Norma requerida",
+          "Cantidad de muestras",
+          "Fecha requerida"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -36,13 +54,31 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-030-ONNCCE-2004 MUESTREO AGG"
         ],
         "scope": "Establecer el muestreo de agregados que se utilizan para la investigación preliminar de fuentes potenciales de suministro; el control de los agregados en la fuente de abastecimiento; el control de las operaciones en el sitio de uso y la aceptación o rechazo de los agregados.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra representativa de agregado fino o grueso, identificada por banco, lote, frente o acopio.",
+        "estimatedTime": "Programacion de 2 a 5 dias habiles segun volumen, ensaye y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Muestreo, preparacion y ensaye conforme a la norma indicada para el material recibido.",
+        "clientPreparation": [
+          "Identificar banco, lote o acopio.",
+          "Evitar contaminacion durante traslado.",
+          "Enviar datos de proyecto y uso del agregado."
+        ],
+        "quoteChecklist": [
+          "Tipo de agregado",
+          "Ubicacion del banco o acopio",
+          "Norma requerida",
+          "Cantidad de muestras",
+          "Fecha requerida"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "agregados-petreos-prueba-densidad-y-absorcion-agregado-fino",
@@ -54,13 +90,31 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-165-ONNCCE-2014 DET DENSIDAD Y ABS AGG FINO"
         ],
         "scope": "Determinación de la densidad relativa aparente y la absorción del agregado fino en la condición saturada y superficialmente seca.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra representativa de agregado fino o grueso, identificada por banco, lote, frente o acopio.",
+        "estimatedTime": "Programacion de 2 a 5 dias habiles segun volumen, ensaye y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Muestreo, preparacion y ensaye conforme a la norma indicada para el material recibido.",
+        "clientPreparation": [
+          "Identificar banco, lote o acopio.",
+          "Evitar contaminacion durante traslado.",
+          "Enviar datos de proyecto y uso del agregado."
+        ],
+        "quoteChecklist": [
+          "Tipo de agregado",
+          "Ubicacion del banco o acopio",
+          "Norma requerida",
+          "Cantidad de muestras",
+          "Fecha requerida"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "agregados-petreos-prueba-densidad-y-absorcion-agregado-grueso",
@@ -72,11 +126,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-164-ONNCCE-2014 DET DENSIDAD Y ABS AGG GRUESO"
         ],
         "scope": "Método de prueba para la determinación de la masa específica y la absorción de agua del agregado grueso.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra representativa de agregado fino o grueso, identificada por banco, lote, frente o acopio.",
+        "estimatedTime": "Programacion de 2 a 5 dias habiles segun volumen, ensaye y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Muestreo, preparacion y ensaye conforme a la norma indicada para el material recibido.",
+        "clientPreparation": [
+          "Identificar banco, lote o acopio.",
+          "Evitar contaminacion durante traslado.",
+          "Enviar datos de proyecto y uso del agregado."
+        ],
+        "quoteChecklist": [
+          "Tipo de agregado",
+          "Ubicacion del banco o acopio",
+          "Norma requerida",
+          "Cantidad de muestras",
+          "Fecha requerida"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -89,11 +161,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-073-ONNCCE-2004 MASA VOL AGG"
         ],
         "scope": "Es la relación entre el peso de un material y el volumen ocupado por si mismo, expresado en kilogramos por metro cubico, para el casa del suelto únicamente la fuerza a utilizar es la caída libre del material a una distancia establecida, para ambos tipo de agregados grueso o fino.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra representativa de agregado fino o grueso, identificada por banco, lote, frente o acopio.",
+        "estimatedTime": "Programacion de 2 a 5 dias habiles segun volumen, ensaye y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Muestreo, preparacion y ensaye conforme a la norma indicada para el material recibido.",
+        "clientPreparation": [
+          "Identificar banco, lote o acopio.",
+          "Evitar contaminacion durante traslado.",
+          "Enviar datos de proyecto y uso del agregado."
+        ],
+        "quoteChecklist": [
+          "Tipo de agregado",
+          "Ubicacion del banco o acopio",
+          "Norma requerida",
+          "Cantidad de muestras",
+          "Fecha requerida"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -106,11 +196,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-076-ONNCCE-2002 IMP ORG DE AGG, NMX-C-088-ONNCCE-1997 IMP ORG DE AGG FINO"
         ],
         "scope": "Determinación de la presencia de materia orgánica dañina en agregados finos utilizados en la fabricación de morteros o concretos de cemento hidráulico. Esta prueba es un índice de contaminación y proporciona en su caso, una advertencia acerca de la necesidad de efectuar otras pruebas antes de su utilización.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra representativa de agregado fino o grueso, identificada por banco, lote, frente o acopio.",
+        "estimatedTime": "Programacion de 2 a 5 dias habiles segun volumen, ensaye y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Muestreo, preparacion y ensaye conforme a la norma indicada para el material recibido.",
+        "clientPreparation": [
+          "Identificar banco, lote o acopio.",
+          "Evitar contaminacion durante traslado.",
+          "Enviar datos de proyecto y uso del agregado."
+        ],
+        "quoteChecklist": [
+          "Tipo de agregado",
+          "Ubicacion del banco o acopio",
+          "Norma requerida",
+          "Cantidad de muestras",
+          "Fecha requerida"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -123,13 +231,31 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-077-1997-ONNCCE GRANULOMETR AGG MET PRUE"
         ],
         "scope": "Método para el análisis granulométrico de agregados finos y gruesos con el fin de determinar la distribución de las partículas de diferentes tamaños a través de las cribas.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra representativa de agregado fino o grueso, identificada por banco, lote, frente o acopio.",
+        "estimatedTime": "Programacion de 2 a 5 dias habiles segun volumen, ensaye y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Muestreo, preparacion y ensaye conforme a la norma indicada para el material recibido.",
+        "clientPreparation": [
+          "Identificar banco, lote o acopio.",
+          "Evitar contaminacion durante traslado.",
+          "Enviar datos de proyecto y uso del agregado."
+        ],
+        "quoteChecklist": [
+          "Tipo de agregado",
+          "Ubicacion del banco o acopio",
+          "Norma requerida",
+          "Cantidad de muestras",
+          "Fecha requerida"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "agregados-petreos-prueba-perdidas-por-lavado-malla-no-200",
@@ -141,14 +267,33 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-084-ONNCCE-2006 PERDIDA POR LAVADO"
         ],
         "scope": "Prueba para determinar el contenido de partículas más finas de la criba F 0.075 (No. 200) por medio de lavado. Durante esta prueba, las partículas de arcilla y otras que se disuelven por el agua de lavado, y las que son solubles en el agua, son separadas.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra representativa de agregado fino o grueso, identificada por banco, lote, frente o acopio.",
+        "estimatedTime": "Programacion de 2 a 5 dias habiles segun volumen, ensaye y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Muestreo, preparacion y ensaye conforme a la norma indicada para el material recibido.",
+        "clientPreparation": [
+          "Identificar banco, lote o acopio.",
+          "Evitar contaminacion durante traslado.",
+          "Enviar datos de proyecto y uso del agregado."
+        ],
+        "quoteChecklist": [
+          "Tipo de agregado",
+          "Ubicacion del banco o acopio",
+          "Norma requerida",
+          "Cantidad de muestras",
+          "Fecha requerida"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       }
-    ]
+    ],
+    "seoDescription": "Pruebas de agregados petreos para control granulometrico, muestreo, densidad, absorcion, impurezas y calidad de materiales para concreto."
   },
   {
     "id": "concretos",
@@ -167,11 +312,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-199-ONNCCE-2010 ADITIVOS TERMINOLOGIA"
         ],
         "scope": "Aditivo es un material diferente al agua, agregados, cemento hidráulico y fibras de refuerzo que se utiliza como un ingrediente del concreto o mortero y que se añade a la mezcla inmediatamente antes o durante su mezclado. Necesidad de modificar las características del mortero o del concreto de tal forma de que estos se adapten a las condiciones de la obra y los requerimientos del constructor. Como único medio factible para lograr las características deseadas del concreto.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -184,11 +347,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-155-ONNCCE-2014 CONC INDUSTRIALIZADO Y MET ENSAYO"
         ],
         "scope": "Optimización de mezclas, reduciendo costos de fabricación aumentando la eficacia de las mismas. Asesoría en elaboración: Concretos convencionales, Concretos estructurales, Concretos autoconsolidables, Concretos permeables, Concretos alta durabilidad, Concreto ligeros, Concreto antideslave, Concretos MR, Concretos autocurables, Morteros.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -201,13 +382,31 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-161-ONNCCE-2013 MUESTREO CONC FRESCO"
         ],
         "scope": "El muestreo es el proceso que consiste en la toma de una porción representativa de mezcla de concreto fresco tal y como es entregado en la obra por el proveedor seleccionado del cliente.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "concretos-determinacion-de-revenimiento",
@@ -219,13 +418,31 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-156-ONNCCE-2010 DET REVENIMIENTO"
         ],
         "scope": "Determinar la consistencia del concreto. Esta es una medida de la fluidez o movilidad relativa de la mezcla de concreto, mediante el cono de revenimiento.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "concretos-determinacion-masa-unitaria",
@@ -237,11 +454,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-162-ONNCCE-2014 DET MASA UNITARIA"
         ],
         "scope": "La masa unitaria se usa para determinar los valores de la misma necesarios para la sección de las proporciones de los agregados en las mezclas de concreto, la masa unitaria puede ser usada también para la determinación de la relaciones masa/volumen para los acuerdos de compra.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -254,11 +489,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-157-ONNCCE-2006 DET CONT AIRE METODO DE PRESION"
         ],
         "scope": "Determina el volumen de vacíos en el concreto fresco, excluyendo el espacio de Determinación del contenido de aire los poros en las partículas del agregado, que se expresa como un porcentaje del volumen total de la mezcla de concreto.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -271,11 +524,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-160-ONNCCE-2004 ELAB Y CURADO ESPEC EN OBRA"
         ],
         "scope": "De la muestra de concreto fresco obtenida en obra, se realizan probetas para su análisis posterior.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -288,11 +559,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-159-ONNCE-2016 ELAB Y CURADO ESPEC EN LAB"
         ],
         "scope": "Mantener la hidratación y alcalinidad adecuada para el desarrollo y madurez de los especímenes tomados en obra.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -305,11 +594,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-109-ONNCCE-2013 CABECEO"
         ],
         "scope": "Preparación con cemento puro o mortero de azufre de las bases de los especímenes para lograr el paralelismo entre las caras para su prueba.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -322,13 +629,31 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-083-ONNCCE-2002 DET DE LA RESISTENCIA"
         ],
         "scope": "Los resultados de las pruebas de resistencia a la compresión se usan fundamentalmente para determinar que la mezcla de concreto suministrada cumpla con los requerimientos de la resistencia especificada, ƒ´c, del proyecto.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "concretos-ensaye-a-flexion",
@@ -340,13 +665,31 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-191-ONNCCE-2004 RESISTENCIA A FLEXION"
         ],
         "scope": "Es el valor obtenido mediante el procedimiento indirecto para determinar la resistencia a la tensión del concreto por el ensaye a la flexión de una viga.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "concretos-determinacion-de-modulo-elastico",
@@ -358,11 +701,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-128-ONNCCE-2013 DET MOD ELASTICIDAD"
         ],
         "scope": "Obtener el módulo de elasticidad del concreto es un propiedad mecánica que refleja la habilidad que tiene el concreto para deformarse elásticamente.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -375,11 +736,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-169-ONNCCE-2009 EXTR CORAZONES"
         ],
         "scope": "La obtención, preparación y prueba de corazones extraídos de concreto endurecido; para la determinación de espesores; de su resistencia a la compresión simple; de su resistencia a la tensión por compresión diametral así como de las vigas cortadas en concreto endurecido, para determinar la resistencia a la tensión por flexión.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -392,11 +771,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-192-ONNCCE-2006 ESCLEROMETRO"
         ],
         "scope": "Procedimiento para determinar el índice de rebote en el concreto endurecido mediante el empleo del dispositivo conocido como esclerómetro o martillo de rebote; determinación que sirve para evaluar la uniformidad superficial del concreto en el sitio o para delimitar zonas o aéreas de diferentes resistencias o al concreto deteriorado en las estructuras así como para indicar cambios en las características del concreto a través del tiempo.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -409,11 +806,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-177-1997-ONNCCE DET TIEMPO FRAGUADO"
         ],
         "scope": "Tiempo de fraguado inicial Es el tiempo que transcurre a partir del momento del contacto inicial del cemento con el agua, hasta que el mortero obtenido por el cribado del concreto presenta una resistencia a la penetración de 3 431,3 kPa (35 kg/cm2 ). Tiempo de fraguado final Es el tiempo que transcurre, a partir del momento que el cemento entra en contacto con el agua, hasta que el mortero obtenido por el cribado del concreto presenta una resistencia a la penetración de 27 451 kPa (280,7 kg/cm2 ).",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -426,11 +841,29 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-470-ONNCCE-2015 ANILLO J"
         ],
         "scope": "Se emplea para determinar la capacidad de circulación del concreto. Es una variación del ensaye de flujo por revenimiento. Durante el ensaye, se coloca alrededor del cono una jaula simulada de varillas de refuerzo y se evalúa la capacidad de extensibilidad de la mezcla, al circular hacia el exterior de la jaula sin segregación.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -443,14 +876,33 @@ export const serviceCategories: ServiceCategory[] = [
           "NMX-C-472-ONNCCE-2013 REV AUTOCONSOLIDABLE"
         ],
         "scope": "Es la medida en términos de expansión cuando se usa una versión modificada de la prueba de revenimiento. La expansión (flujo por revenimiento) del concreto autocompactable típicamente varía de los 455 a 810 mm, dependiendo de los requisitos para el proyecto.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Concreto fresco en obra o especimenes identificados, segun el tipo de prueba solicitada.",
+        "estimatedTime": "Atencion segun programa de colado; resultados de resistencia conforme a la edad de ensaye contratada.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Verificacion en campo, elaboracion o recepcion de especimenes y ensaye en laboratorio conforme a norma.",
+        "clientPreparation": [
+          "Compartir programa de colado.",
+          "Indicar elemento, ubicacion y resistencia de proyecto.",
+          "Confirmar edades de ensaye requeridas."
+        ],
+        "quoteChecklist": [
+          "Fecha y hora de colado",
+          "Ubicacion de obra",
+          "Volumen aproximado",
+          "Resistencia de proyecto",
+          "Edades de ruptura"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       }
-    ]
+    ],
+    "seoDescription": "Ensayes de concreto fresco y endurecido, revenimiento, masa volumetrica, temperatura, cilindros, resistencia y controles especiales."
   },
   {
     "id": "soldadura",
@@ -467,15 +919,34 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "La inspección por líquidos penetrantes es un tipo de ensayo no destructivo que se utiliza para detectar e identificar discontinuidades presentes en la superficie de los materiales examinados, que pueden afectar el desempeno del material.",
         "standards": [],
         "scope": "La inspección por líquidos penetrantes es un tipo de ensayo no destructivo que se utiliza para detectar e identificar discontinuidades presentes en la superficie de los materiales examinados, que pueden afectar el desempeno del material.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Elemento, junta o probeta preparada de acuerdo con el procedimiento e inspeccion requerida.",
+        "estimatedTime": "Programacion de visita o laboratorio segun numero de juntas, procedimiento y acceso al elemento.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Inspeccion visual o ensayo no destructivo conforme al procedimiento y norma aplicable.",
+        "clientPreparation": [
+          "Liberar acceso seguro al elemento.",
+          "Compartir procedimiento o especificacion aplicable.",
+          "Limpiar la zona de inspeccion cuando aplique."
+        ],
+        "quoteChecklist": [
+          "Tipo de junta o elemento",
+          "Cantidad de puntos",
+          "Norma o codigo requerido",
+          "Ubicacion",
+          "Disponibilidad de acceso"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       }
-    ]
+    ],
+    "seoDescription": "Ensayos e inspecciones para soldadura, liquidos penetrantes, ultrasonido, calificacion y control no destructivo."
   },
   {
     "id": "acero",
@@ -492,13 +963,31 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Es el ensayo que permite conocer las características del acero cuando se somete a esfuerzos de tracción. Determinar la resistencia a la rotura y las principales propiedades mecánicas del material.",
         "standards": [],
         "scope": "Es el ensayo que permite conocer las características del acero cuando se somete a esfuerzos de tracción. Determinar la resistencia a la rotura y las principales propiedades mecánicas del material.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Varilla, probeta o pieza metalica identificada por lote, diametro, grado y proveedor.",
+        "estimatedTime": "Programacion de 2 a 5 dias habiles segun cantidad de piezas y ensaye requerido.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Recepcion, identificacion y ensaye mecanico conforme a norma o especificacion solicitada.",
+        "clientPreparation": [
+          "Identificar diametro, grado y lote.",
+          "Enviar piezas sin dano por corte inadecuado.",
+          "Compartir certificado de proveedor si existe."
+        ],
+        "quoteChecklist": [
+          "Diametro o seccion",
+          "Grado del acero",
+          "Numero de muestras",
+          "Proveedor o lote",
+          "Norma requerida"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "acero-prueba-de-doblado",
@@ -508,14 +997,33 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Este ensayo mide la capacidad de la barra para doblarse hasta llegar a un doblez de radio mínimo sin agrietarse.",
         "standards": [],
         "scope": "Este ensayo mide la capacidad de la barra para doblarse hasta llegar a un doblez de radio mínimo sin agrietarse.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Varilla, probeta o pieza metalica identificada por lote, diametro, grado y proveedor.",
+        "estimatedTime": "Programacion de 2 a 5 dias habiles segun cantidad de piezas y ensaye requerido.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion, identificacion y ensaye mecanico conforme a norma o especificacion solicitada.",
+        "clientPreparation": [
+          "Identificar diametro, grado y lote.",
+          "Enviar piezas sin dano por corte inadecuado.",
+          "Compartir certificado de proveedor si existe."
+        ],
+        "quoteChecklist": [
+          "Diametro o seccion",
+          "Grado del acero",
+          "Numero de muestras",
+          "Proveedor o lote",
+          "Norma requerida"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       }
-    ]
+    ],
+    "seoDescription": "Ensayes de acero de refuerzo y materiales metalicos para verificar propiedades mecanicas y cumplimiento normativo."
   },
   {
     "id": "terraceria",
@@ -532,11 +1040,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Las terracerías se definen como volúmenes de materiales que se extraen o que sirven de relleno en la construcción de una vía terrestre.",
         "standards": [],
         "scope": "Las terracerías se definen como volúmenes de materiales que se extraen o que sirven de relleno en la construcción de una vía terrestre.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Material representativo de banco, capa, tramo o sitio de compactacion, identificado por ubicacion.",
+        "estimatedTime": "Programacion segun visita de campo, volumen de muestras y pruebas de laboratorio requeridas.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Muestreo, ensayo de laboratorio o verificacion en campo conforme al control solicitado.",
+        "clientPreparation": [
+          "Indicar tramo, capa o banco.",
+          "Compartir especificacion de compactacion.",
+          "Coordinar acceso al frente de trabajo."
+        ],
+        "quoteChecklist": [
+          "Ubicacion del tramo",
+          "Tipo de material",
+          "Espesor o capa",
+          "Especificacion de compactacion",
+          "Numero de puntos"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -547,13 +1073,31 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Prueba de campo para obtener porcentaje de compactación en un terraplén.",
         "standards": [],
         "scope": "Prueba de campo para obtener porcentaje de compactación en un terraplén.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Material representativo de banco, capa, tramo o sitio de compactacion, identificado por ubicacion.",
+        "estimatedTime": "Programacion segun visita de campo, volumen de muestras y pruebas de laboratorio requeridas.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Muestreo, ensayo de laboratorio o verificacion en campo conforme al control solicitado.",
+        "clientPreparation": [
+          "Indicar tramo, capa o banco.",
+          "Compartir especificacion de compactacion.",
+          "Coordinar acceso al frente de trabajo."
+        ],
+        "quoteChecklist": [
+          "Ubicacion del tramo",
+          "Tipo de material",
+          "Espesor o capa",
+          "Especificacion de compactacion",
+          "Numero de puntos"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "terraceria-determinacion-de-la-masa-volumetrica-seca-maxima-y-humedad-optima",
@@ -563,13 +1107,31 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Relación entre la masa de los sólidos del material y el volumen total del mismo, porcentaje del contenido de agua.",
         "standards": [],
         "scope": "Relación entre la masa de los sólidos del material y el volumen total del mismo, porcentaje del contenido de agua.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Material representativo de banco, capa, tramo o sitio de compactacion, identificado por ubicacion.",
+        "estimatedTime": "Programacion segun visita de campo, volumen de muestras y pruebas de laboratorio requeridas.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Muestreo, ensayo de laboratorio o verificacion en campo conforme al control solicitado.",
+        "clientPreparation": [
+          "Indicar tramo, capa o banco.",
+          "Compartir especificacion de compactacion.",
+          "Coordinar acceso al frente de trabajo."
+        ],
+        "quoteChecklist": [
+          "Ubicacion del tramo",
+          "Tipo de material",
+          "Espesor o capa",
+          "Especificacion de compactacion",
+          "Numero de puntos"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "terraceria-granulometrias-y-contenidos-de-finos",
@@ -579,11 +1141,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Clasificación del agregado mediante el uso de tamices para la obtención de curvas granulométricas.",
         "standards": [],
         "scope": "Clasificación del agregado mediante el uso de tamices para la obtención de curvas granulométricas.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Material representativo de banco, capa, tramo o sitio de compactacion, identificado por ubicacion.",
+        "estimatedTime": "Programacion segun visita de campo, volumen de muestras y pruebas de laboratorio requeridas.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Muestreo, ensayo de laboratorio o verificacion en campo conforme al control solicitado.",
+        "clientPreparation": [
+          "Indicar tramo, capa o banco.",
+          "Compartir especificacion de compactacion.",
+          "Coordinar acceso al frente de trabajo."
+        ],
+        "quoteChecklist": [
+          "Ubicacion del tramo",
+          "Tipo de material",
+          "Espesor o capa",
+          "Especificacion de compactacion",
+          "Numero de puntos"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -594,11 +1174,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Porcentaje de contenido de humedad con que un suelo cambia al disminuir su humedad de la consistencia plástica a la semisólida, o, al aumentar su humedad, de la consistencia semisólida a la plástica.",
         "standards": [],
         "scope": "Porcentaje de contenido de humedad con que un suelo cambia al disminuir su humedad de la consistencia plástica a la semisólida, o, al aumentar su humedad, de la consistencia semisólida a la plástica.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Material representativo de banco, capa, tramo o sitio de compactacion, identificado por ubicacion.",
+        "estimatedTime": "Programacion segun visita de campo, volumen de muestras y pruebas de laboratorio requeridas.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Muestreo, ensayo de laboratorio o verificacion en campo conforme al control solicitado.",
+        "clientPreparation": [
+          "Indicar tramo, capa o banco.",
+          "Compartir especificacion de compactacion.",
+          "Coordinar acceso al frente de trabajo."
+        ],
+        "quoteChecklist": [
+          "Ubicacion del tramo",
+          "Tipo de material",
+          "Espesor o capa",
+          "Especificacion de compactacion",
+          "Numero de puntos"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -609,11 +1207,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "El Equivalente de Arena es una prueba de laboratorio, que se realiza con el objeto de determinar qué porcentaje de una muestra se puede considerar como arena.",
         "standards": [],
         "scope": "El Equivalente de Arena es una prueba de laboratorio, que se realiza con el objeto de determinar qué porcentaje de una muestra se puede considerar como arena.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Material representativo de banco, capa, tramo o sitio de compactacion, identificado por ubicacion.",
+        "estimatedTime": "Programacion segun visita de campo, volumen de muestras y pruebas de laboratorio requeridas.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Muestreo, ensayo de laboratorio o verificacion en campo conforme al control solicitado.",
+        "clientPreparation": [
+          "Indicar tramo, capa o banco.",
+          "Compartir especificacion de compactacion.",
+          "Coordinar acceso al frente de trabajo."
+        ],
+        "quoteChecklist": [
+          "Ubicacion del tramo",
+          "Tipo de material",
+          "Espesor o capa",
+          "Especificacion de compactacion",
+          "Numero de puntos"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -624,14 +1240,33 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "El objetivo de la prueba de desgaste por medio de la Máquina de los Ángeles es determinar la resistencia a la trituración o abrasión de los materiales pétreos utilizados en las mezclas asfálticas.",
         "standards": [],
         "scope": "El objetivo de la prueba de desgaste por medio de la Máquina de los Ángeles es determinar la resistencia a la trituración o abrasión de los materiales pétreos utilizados en las mezclas asfálticas.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Material representativo de banco, capa, tramo o sitio de compactacion, identificado por ubicacion.",
+        "estimatedTime": "Programacion segun visita de campo, volumen de muestras y pruebas de laboratorio requeridas.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Muestreo, ensayo de laboratorio o verificacion en campo conforme al control solicitado.",
+        "clientPreparation": [
+          "Indicar tramo, capa o banco.",
+          "Compartir especificacion de compactacion.",
+          "Coordinar acceso al frente de trabajo."
+        ],
+        "quoteChecklist": [
+          "Ubicacion del tramo",
+          "Tipo de material",
+          "Espesor o capa",
+          "Especificacion de compactacion",
+          "Numero de puntos"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       }
-    ]
+    ],
+    "seoDescription": "Pruebas de terraceria, compactacion, pesos volumetricos, humedad, limites, granulometria y control de capas en obra."
   },
   {
     "id": "calidad-agua",
@@ -648,13 +1283,31 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar la alcalinidad a la total como CaCO 3 en muestras de aguas por el método de titulación volumétrica. Alcalinidad a la fenolftaleína Alcalinidad total Carbonatos y bicarbonatos",
         "standards": [],
         "scope": "Determinar la alcalinidad a la total como CaCO 3 en muestras de aguas por el método de titulación volumétrica. Alcalinidad a la fenolftaleína Alcalinidad total Carbonatos y bicarbonatos",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "calidad-agua-determinacion-de-dureza-total-del-agua",
@@ -664,11 +1317,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar el contenido de dureza total como CaCO 3 en aguas potables, superficiales o subterráneas, de desechos domésticos o industriales y salinas",
         "standards": [],
         "scope": "Determinar el contenido de dureza total como CaCO 3 en aguas potables, superficiales o subterráneas, de desechos domésticos o industriales y salinas",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -679,11 +1350,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar el contenido de dureza de calcio como CaCO 3 en aguas potables, superficiales o subterráneas, de desechos domésticos o industriales y salinas",
         "standards": [],
         "scope": "Determinar el contenido de dureza de calcio como CaCO 3 en aguas potables, superficiales o subterráneas, de desechos domésticos o industriales y salinas",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -694,11 +1383,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar la concentración oxígeno disuelto en aguas, aguas de esteros y agua de mar como mg/L de O 2",
         "standards": [],
         "scope": "Determinar la concentración oxígeno disuelto en aguas, aguas de esteros y agua de mar como mg/L de O 2",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -709,13 +1416,31 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar el contenido de cloruros en aguas potables, superficiales o subterráneas, de desechos domésticos o industriales y salinas por titulación volumétrica",
         "standards": [],
         "scope": "Determinar el contenido de cloruros en aguas potables, superficiales o subterráneas, de desechos domésticos o industriales y salinas por titulación volumétrica",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "calidad-agua-determinacion-de-cloro-libre-en-agua",
@@ -725,11 +1450,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar el contenido de cloro (ión hipoclorito y ácido hipocloroso) como mg/L de Cl 2 en muestras de agua, aguas tratadas, aguas de estuario y agua de mar mediante espectrofotometría",
         "standards": [],
         "scope": "Determinar el contenido de cloro (ión hipoclorito y ácido hipocloroso) como mg/L de Cl 2 en muestras de agua, aguas tratadas, aguas de estuario y agua de mar mediante espectrofotometría",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -740,11 +1483,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar el valor de la concentración de hierro total en muestras de agua utilizando el método espectrofotométrico como mg/L de Fe",
         "standards": [],
         "scope": "Determinar el valor de la concentración de hierro total en muestras de agua utilizando el método espectrofotométrico como mg/L de Fe",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -755,11 +1516,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar la concentración de sulfatos en mg/L SO 4 2- de una muestra de agua, agua de estuario, agua residual, aguas salinas y/o congénitas por espectrofotometría",
         "standards": [],
         "scope": "Determinar la concentración de sulfatos en mg/L SO 4 2- de una muestra de agua, agua de estuario, agua residual, aguas salinas y/o congénitas por espectrofotometría",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -770,11 +1549,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinación de color para aguas, aguas residuales y agua de mar en unidades Pt-Co por espectrofotometría",
         "standards": [],
         "scope": "Determinación de color para aguas, aguas residuales y agua de mar en unidades Pt-Co por espectrofotometría",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -785,11 +1582,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar la concentración de bario en una muestra de agua como mg/L de bario en aguas, aguas residuales, aguas industriales, aguas de esteros y agua de mar",
         "standards": [],
         "scope": "Determinar la concentración de bario en una muestra de agua como mg/L de bario en aguas, aguas residuales, aguas industriales, aguas de esteros y agua de mar",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -800,11 +1615,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar concentración de sólidos suspendidos en una muestra de agua por el método de espectrofotometría en mg/L de sólidos suspendidos y para el control de procesos en planta",
         "standards": [],
         "scope": "Determinar concentración de sólidos suspendidos en una muestra de agua por el método de espectrofotometría en mg/L de sólidos suspendidos y para el control de procesos en planta",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -815,11 +1648,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar sólidos disueltos totales en aguas, aguas residuales, aguas congénitas y aguas de mar en rango en ppm / 10.00 ppt por sonda multiparamétrica",
         "standards": [],
         "scope": "Determinar sólidos disueltos totales en aguas, aguas residuales, aguas congénitas y aguas de mar en rango en ppm / 10.00 ppt por sonda multiparamétrica",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -830,11 +1681,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar conductividad en aguas, aguas de esteros, aguas residuales, aguas industriales y aguas de mar por medio de sonda multiparamétrica",
         "standards": [],
         "scope": "Determinar conductividad en aguas, aguas de esteros, aguas residuales, aguas industriales y aguas de mar por medio de sonda multiparamétrica",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -845,11 +1714,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar la salinidad en aguas, aguas residuales, aguas congénitas y aguas de mar en rango 0 ppt a 1%, sonda multiparamétrica",
         "standards": [],
         "scope": "Determinar la salinidad en aguas, aguas residuales, aguas congénitas y aguas de mar en rango 0 ppt a 1%, sonda multiparamétrica",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -860,13 +1747,31 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar el potencial de hidrogeno (pH) en aguas, aguas residuales, aguas industriales, aguas de esteros y aguas de mar mediante potenciómetro",
         "standards": [],
         "scope": "Determinar el potencial de hidrogeno (pH) en aguas, aguas residuales, aguas industriales, aguas de esteros y aguas de mar mediante potenciómetro",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "calidad-agua-determinacion-de-temperatura",
@@ -876,11 +1781,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinar la temperatura de análisis, sonda multiparamétrica o termómetro de inmersión parcial",
         "standards": [],
         "scope": "Determinar la temperatura de análisis, sonda multiparamétrica o termómetro de inmersión parcial",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -891,14 +1814,33 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Análisis de propiedades iónicas e incrustantes del agua y estimación de la tendencia incrustante. Evaluación por riesgo de formación de depósitos de carbonato de calcio",
         "standards": [],
         "scope": "Análisis de propiedades iónicas e incrustantes del agua y estimación de la tendencia incrustante. Evaluación por riesgo de formación de depósitos de carbonato de calcio",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra de agua en recipiente limpio, identificada por origen, fecha y uso previsto.",
+        "estimatedTime": "Programacion segun parametros solicitados y recepcion de muestra.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Recepcion de muestra y determinacion de parametros fisicos o quimicos conforme a alcance contratado.",
+        "clientPreparation": [
+          "Identificar origen de la muestra.",
+          "Evitar contaminacion del recipiente.",
+          "Indicar uso previsto del agua."
+        ],
+        "quoteChecklist": [
+          "Origen del agua",
+          "Uso previsto",
+          "Parametros requeridos",
+          "Numero de muestras",
+          "Fecha de muestreo"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       }
-    ]
+    ],
+    "seoDescription": "Analisis de calidad del agua para uso en construccion, control fisico-quimico y verificacion de parametros aplicables."
   },
   {
     "id": "mecanica-suelos",
@@ -915,13 +1857,31 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Técnica geofísica que mide la distribución de la resistividad eléctrica del subsuelo. Se utiliza para explorar el terreno y conocer sus características.",
         "standards": [],
         "scope": "Técnica geofísica que mide la distribución de la resistividad eléctrica del subsuelo. Se utiliza para explorar el terreno y conocer sus características.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra alterada, inalterada, punto de exploracion o informacion del sitio segun el estudio requerido.",
+        "estimatedTime": "Programacion segun alcance de exploracion, condiciones del sitio y entregables solicitados.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Exploracion, muestreo, ensaye y analisis geotecnico conforme al objetivo del proyecto.",
+        "clientPreparation": [
+          "Compartir ubicacion y acceso al predio.",
+          "Indicar tipo de estructura o proyecto.",
+          "Entregar planos o antecedentes disponibles."
+        ],
+        "quoteChecklist": [
+          "Ubicacion del predio",
+          "Tipo de obra",
+          "Area o numero de puntos",
+          "Profundidad objetivo",
+          "Entregable requerido"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "mecanica-suelos-sacs-sondeo-avance-controlado-invasiva",
@@ -931,13 +1891,31 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Técnica de perforación que se utiliza para detectar cavidades y conocer la calidad de la roca",
         "standards": [],
         "scope": "Técnica de perforación que se utiliza para detectar cavidades y conocer la calidad de la roca",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra alterada, inalterada, punto de exploracion o informacion del sitio segun el estudio requerido.",
+        "estimatedTime": "Programacion segun alcance de exploracion, condiciones del sitio y entregables solicitados.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Exploracion, muestreo, ensaye y analisis geotecnico conforme al objetivo del proyecto.",
+        "clientPreparation": [
+          "Compartir ubicacion y acceso al predio.",
+          "Indicar tipo de estructura o proyecto.",
+          "Entregar planos o antecedentes disponibles."
+        ],
+        "quoteChecklist": [
+          "Ubicacion del predio",
+          "Tipo de obra",
+          "Area o numero de puntos",
+          "Profundidad objetivo",
+          "Entregable requerido"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       },
       {
         "id": "mecanica-suelos-geotomografo",
@@ -947,11 +1925,29 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Obtención de imágenes de resistividad del subsuelo y obtención de cortes geoeléctricos diseñado para la exploración de campos extensos y con profundidades intermedias brindando una precisión fiable que a su vez de manera inmediata muestra gráficamente las mediciones tomadas del subsuelo con una capacidad de tomar múltiples mediciones con un solo tendido de electrodos a través del mismo cable.",
         "standards": [],
         "scope": "Obtención de imágenes de resistividad del subsuelo y obtención de cortes geoeléctricos diseñado para la exploración de campos extensos y con profundidades intermedias brindando una precisión fiable que a su vez de manera inmediata muestra gráficamente las mediciones tomadas del subsuelo con una capacidad de tomar múltiples mediciones con un solo tendido de electrodos a través del mismo cable.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra alterada, inalterada, punto de exploracion o informacion del sitio segun el estudio requerido.",
+        "estimatedTime": "Programacion segun alcance de exploracion, condiciones del sitio y entregables solicitados.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
+        ],
+        "method": "Exploracion, muestreo, ensaye y analisis geotecnico conforme al objetivo del proyecto.",
+        "clientPreparation": [
+          "Compartir ubicacion y acceso al predio.",
+          "Indicar tipo de estructura o proyecto.",
+          "Entregar planos o antecedentes disponibles."
+        ],
+        "quoteChecklist": [
+          "Ubicacion del predio",
+          "Tipo de obra",
+          "Area o numero de puntos",
+          "Profundidad objetivo",
+          "Entregable requerido"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
         ]
       },
       {
@@ -962,15 +1958,34 @@ export const serviceCategories: ServiceCategory[] = [
         "description": "Determinación de la capacidad de carga, Estratigrafía del suelo, Determinación del Nivel Freático, Identificación de zonas inestables y Recomendaciones de cimentación.",
         "standards": [],
         "scope": "Determinación de la capacidad de carga, Estratigrafía del suelo, Determinación del Nivel Freático, Identificación de zonas inestables y Recomendaciones de cimentación.",
-        "sample": "Se define con el laboratorio según el alcance solicitado.",
-        "estimatedTime": "Se define según programación y alcance.",
+        "sample": "Muestra alterada, inalterada, punto de exploracion o informacion del sitio segun el estudio requerido.",
+        "estimatedTime": "Programacion segun alcance de exploracion, condiciones del sitio y entregables solicitados.",
         "deliverables": [
-          "Ficha técnica del servicio",
-          "Reporte de resultados cuando aplique"
+          "Reporte tecnico de resultados",
+          "Identificacion de muestra o elemento",
+          "Normas de referencia aplicables",
+          "Ficha técnica del servicio"
         ],
-        "featured": true
+        "featured": true,
+        "method": "Exploracion, muestreo, ensaye y analisis geotecnico conforme al objetivo del proyecto.",
+        "clientPreparation": [
+          "Compartir ubicacion y acceso al predio.",
+          "Indicar tipo de estructura o proyecto.",
+          "Entregar planos o antecedentes disponibles."
+        ],
+        "quoteChecklist": [
+          "Ubicacion del predio",
+          "Tipo de obra",
+          "Area o numero de puntos",
+          "Profundidad objetivo",
+          "Entregable requerido"
+        ],
+        "notes": [
+          "La disponibilidad, alcance final y condiciones de servicio se confirman al cotizar."
+        ]
       }
-    ]
+    ],
+    "seoDescription": "Servicios de mecanica de suelos, exploracion, capacidad de carga, estratigrafia, compactacion y recomendaciones de cimentacion."
   }
 ];
 

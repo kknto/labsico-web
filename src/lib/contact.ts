@@ -5,6 +5,8 @@ export type QuotePayload = {
   project?: string;
   service?: string;
   comments?: string;
+  company?: string;
+  startedAt?: string;
 };
 
 const limits = {
@@ -13,7 +15,9 @@ const limits = {
   email: 160,
   project: 160,
   service: 180,
-  comments: 800
+  comments: 800,
+  company: 120,
+  startedAt: 40
 };
 
 function sanitize(value: string | undefined, maxLength: number) {
@@ -27,7 +31,9 @@ export function sanitizeQuotePayload(payload: Partial<QuotePayload>): Partial<Qu
     email: sanitize(payload.email, limits.email),
     project: sanitize(payload.project, limits.project),
     service: sanitize(payload.service, limits.service),
-    comments: sanitize(payload.comments, limits.comments)
+    comments: sanitize(payload.comments, limits.comments),
+    company: sanitize(payload.company, limits.company),
+    startedAt: sanitize(payload.startedAt, limits.startedAt)
   };
 }
 
@@ -55,6 +61,12 @@ export function buildWhatsAppUrl(whatsappNumber: string, payload: QuotePayload) 
   return `https://wa.me/${number}?text=${text}`;
 }
 
+export function buildMailtoUrl(email: string, payload: QuotePayload) {
+  const subject = encodeURIComponent(`Solicitud de cotizacion LABSICO - ${payload.service || "Servicio"}`);
+  const body = encodeURIComponent(buildQuoteMessage(payload));
+  return `mailto:${email}?subject=${subject}&body=${body}`;
+}
+
 export function validateQuotePayload(payload: Partial<QuotePayload>) {
   const errors: Record<string, string> = {};
 
@@ -69,6 +81,15 @@ export function validateQuotePayload(payload: Partial<QuotePayload>) {
   }
   if (payload.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email)) {
     errors.email = "Indica un correo valido.";
+  }
+  if (payload.company) {
+    errors.form = "Solicitud invalida.";
+  }
+  if (payload.startedAt) {
+    const startedAt = Number(payload.startedAt);
+    if (!Number.isFinite(startedAt) || Date.now() - startedAt < 1800) {
+      errors.form = "Espera un momento antes de enviar la solicitud.";
+    }
   }
 
   return errors;

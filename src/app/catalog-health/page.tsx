@@ -1,4 +1,13 @@
+import type { Metadata } from "next";
 import { validateCatalogIntegrity } from "@/lib/catalog";
+
+export const metadata: Metadata = {
+  title: "Catalog health | LABSICO",
+  robots: {
+    index: false,
+    follow: false
+  }
+};
 
 export default function CatalogHealthPage() {
   const errors = validateCatalogIntegrity();

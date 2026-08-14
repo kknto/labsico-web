@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { ServicesExplorer } from "@/features/services/ServicesExplorer";
 import { SectionHeader } from "@/components/SectionHeader";
+
+export const metadata: Metadata = {
+  title: "Servicios de laboratorio | LABSICO",
+  description:
+    "Catalogo de pruebas y servicios LABSICO para concreto, agregados, soldadura, acero, terraceria, agua y mecanica de suelos."
+};
 
 type ServicesPageProps = {
   searchParams: Promise<{

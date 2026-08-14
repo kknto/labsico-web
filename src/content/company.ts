@@ -1,4 +1,4 @@
-﻿import type { Accreditation, CompanyValue, ProjectCase } from "./types";
+﻿import type { Accreditation, AccreditationScope, CompanyValue, ProjectCase } from "./types";
 
 export const publicContact = {
   whatsapp: process.env.NEXT_PUBLIC_LABSICO_WHATSAPP || "5219982134937",
@@ -18,21 +18,51 @@ export const accreditations: Accreditation[] = [
     entity: "ema, a.c.",
     number: "C-1861-357/24",
     description:
-      "Acreditacion como Laboratorio de Ensayo bajo NMX-EC-17025-IMNC-2018 / ISO/IEC 17025:2017, requisitos generales para la competencia de laboratorios de ensayo y calibracion."
+      "Acreditacion como Laboratorio de Ensayo bajo NMX-EC-17025-IMNC-2018 / ISO/IEC 17025:2017, requisitos generales para la competencia de laboratorios de ensayo y calibracion.",
+    status: "Acreditado",
+    scope: ["Ensayos de laboratorio", "Control de calidad", "Trazabilidad documental"]
   },
   {
     name: "Normativa de referencia",
     entity: "NOM / NMX / ASTM / ACI",
     number: "Segun alcance contratado",
     description:
-      "Servicios orientados a cumplimiento normativo y control tecnico para proyectos de construccion."
+      "Servicios orientados a cumplimiento normativo y control tecnico para proyectos de construccion.",
+    status: "Aplicable por servicio",
+    scope: ["NOM", "NMX", "ASTM", "ACI"]
   },
   {
     name: "Laboratorios independientes",
     entity: "Laboratorios independientes al servicio de la construccion, A.C.",
     number: "Socio No. 458",
     description:
-      "Afiliacion institucional publicada en la pagina actual de LABSICO para respaldar presencia en el sector."
+      "Afiliacion institucional publicada en la pagina actual de LABSICO para respaldar presencia en el sector.",
+    status: "Afiliado",
+    scope: ["Presencia institucional", "Sector construccion"]
+  }
+];
+
+export const accreditationScopes: AccreditationScope[] = [
+  {
+    id: "ensayos-materiales",
+    title: "Ensayos para materiales de construccion",
+    description:
+      "Control tecnico para concreto, agregados, acero, terracerias, agua y mecanica de suelos, segun el alcance solicitado por el cliente.",
+    items: ["Muestreo", "Ensaye", "Registro de resultados", "Reporte tecnico"]
+  },
+  {
+    id: "trazabilidad",
+    title: "Trazabilidad y soporte documental",
+    description:
+      "Cada servicio se documenta con datos de identificacion, metodo aplicable, muestra, condiciones relevantes y entregables acordados.",
+    items: ["Identificacion de muestra", "Normas de referencia", "Bitacora de seguimiento", "Reporte de resultados"]
+  },
+  {
+    id: "campo-laboratorio",
+    title: "Capacidad en campo y laboratorio",
+    description:
+      "Atencion a proyectos que requieren coordinacion entre obra, laboratorio y administracion tecnica para sostener el control de calidad.",
+    items: ["Programacion de visita", "Recepcion de muestras", "Ensayes especializados", "Entrega digital"]
   }
 ];
 

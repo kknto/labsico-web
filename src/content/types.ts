@@ -9,6 +9,9 @@ export type ServiceItem = {
   sample: string;
   estimatedTime: string;
   deliverables: string[];
+  method?: string;
+  clientPreparation?: string[];
+  quoteChecklist?: string[];
   notes?: string[];
   featured?: boolean;
 };
@@ -17,6 +20,7 @@ export type ServiceCategory = {
   id: string;
   name: string;
   summary: string;
+  seoDescription?: string;
   order: number;
   accent: "red" | "blue" | "steel" | "green";
   items: ServiceItem[];
@@ -38,7 +42,16 @@ export type Accreditation = {
   entity: string;
   number: string;
   description: string;
+  scope?: string[];
+  status?: string;
   link?: string;
+};
+
+export type AccreditationScope = {
+  id: string;
+  title: string;
+  description: string;
+  items: string[];
 };
 
 export type CompanyValue = {
@@ -51,6 +64,7 @@ export type InternalPlatform = {
   name: string;
   description: string;
   owner: string;
+  group: "Reportes" | "Obra" | "Administracion" | "Documentos";
   status: string;
   url?: string;
   envKey: string;

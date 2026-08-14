@@ -71,7 +71,37 @@ export function ServiceModal({ service, onClose }: ServiceModalProps) {
               <strong>Tiempo estimado</strong>
               <p>{service.estimatedTime}</p>
             </div>
+            {service.method ? (
+              <div className="definition">
+                <strong>Metodo de trabajo</strong>
+                <p>{service.method}</p>
+              </div>
+            ) : null}
           </div>
+          {service.clientPreparation?.length ? (
+            <div>
+              <strong>Preparacion del cliente</strong>
+              <div className="tag-list" style={{ marginTop: 10 }}>
+                {service.clientPreparation.map((item) => (
+                  <span className="tag" key={item}>
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ) : null}
+          {service.quoteChecklist?.length ? (
+            <div>
+              <strong>Datos para cotizar</strong>
+              <div className="tag-list" style={{ marginTop: 10 }}>
+                {service.quoteChecklist.map((item) => (
+                  <span className="tag" key={item}>
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ) : null}
           <div>
             <strong>Entregables</strong>
             <div className="tag-list" style={{ marginTop: 10 }}>

@@ -14,6 +14,10 @@ export function getAllServices() {
   );
 }
 
+export function findCategoryById(id: string) {
+  return getSortedCategories().find((category) => category.id === id);
+}
+
 export function findServiceBySlug(slug: string) {
   return getAllServices().find((service) => service.slug === slug);
 }
@@ -30,6 +34,10 @@ export function validateCatalogIntegrity() {
     }
     categoryIds.add(category.id);
 
+    if (!category.seoDescription?.trim()) {
+      errors.push(`Missing seoDescription for category: ${category.id}`);
+    }
+
     for (const item of category.items) {
       if (item.categoryId !== category.id) {
         errors.push(`Service ${item.id} points to ${item.categoryId}, expected ${category.id}`);
@@ -39,6 +47,12 @@ export function validateCatalogIntegrity() {
       }
       if (serviceSlugs.has(item.slug)) {
         errors.push(`Duplicate service slug: ${item.slug}`);
+      }
+      if (!item.sample.trim() || !item.estimatedTime.trim() || !item.method?.trim()) {
+        errors.push(`Incomplete technical card for service: ${item.id}`);
+      }
+      if (!item.quoteChecklist?.length || !item.clientPreparation?.length) {
+        errors.push(`Missing quote guidance for service: ${item.id}`);
       }
       serviceIds.add(item.id);
       serviceSlugs.add(item.slug);

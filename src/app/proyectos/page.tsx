@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { SectionHeader } from "@/components/SectionHeader";
 import { projectCases } from "@/content/company";
+
+export const metadata: Metadata = {
+  title: "Proyectos | LABSICO",
+  description:
+    "Casos de seguimiento tecnico y control de calidad ejecutados por LABSICO en proyectos de construccion."
+};
 
 export default function ProjectsPage() {
   return (

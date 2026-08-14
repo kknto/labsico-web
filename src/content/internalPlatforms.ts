@@ -11,6 +11,7 @@ const configuredPlatforms: InternalPlatform[] = [
     description:
       "Plataforma para cargar, consultar y descargar reportes de clientes autorizados.",
     owner: "Laboratorio / Administracion",
+    group: "Reportes",
     status: "Disponible",
     url: REPORTES_URL,
     envKey: "INTERNAL_REPORTES_URL"
@@ -21,6 +22,7 @@ const configuredPlatforms: InternalPlatform[] = [
     description:
       "Acceso interno al sistema de seguimiento operativo para procesos de deslizado y control relacionado.",
     owner: "Operacion / Obra",
+    group: "Obra",
     status: "Disponible",
     url: SLIPFORM_URL,
     envKey: "INTERNAL_SLIPFORM_URL"
@@ -31,10 +33,13 @@ const configuredPlatforms: InternalPlatform[] = [
     description:
       "Acceso a la plataforma operativa para gestion financiera, divisiones, gastos, ingresos y cierres.",
     owner: "Direccion / Administracion",
+    group: "Administracion",
     status: "Disponible",
     url: GESTION_URL,
     envKey: "INTERNAL_GESTION_URL"
   }
 ];
 
-export const internalPlatforms = configuredPlatforms.filter((platform) => Boolean(platform.url));
+export const internalPlatforms = configuredPlatforms.filter(
+  (platform): platform is InternalPlatform & { url: string } => Boolean(platform.url)
+);

@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Send } from "lucide-react";
+import { Mail, MessageCircle, Send } from "lucide-react";
 import { getAllServices } from "@/lib/catalog";
 import type { QuotePayload } from "@/lib/contact";
 
@@ -11,6 +11,7 @@ type ContactFormProps = {
 
 type ApiResponse = {
   url?: string;
+  emailUrl?: string;
   errors?: Record<string, string>;
 };
 
@@ -23,19 +24,23 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
     email: "",
     project: "",
     service: initialService?.name ?? "",
-    comments: ""
+    comments: "",
+    company: ""
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [quoteUrl, setQuoteUrl] = useState<string>("");
+  const [quoteUrl, setQuoteUrl] = useState("");
+  const [emailUrl, setEmailUrl] = useState("");
+  const [startedAt] = useState(() => String(Date.now()));
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setQuoteUrl("");
+    setEmailUrl("");
 
     const response = await fetch("/api/quote-link", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
+      body: JSON.stringify({ ...payload, startedAt })
     });
     const data = (await response.json()) as ApiResponse;
 
@@ -46,10 +51,21 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
 
     setErrors({});
     setQuoteUrl(data.url ?? "");
+    setEmailUrl(data.emailUrl ?? "");
   }
 
   return (
     <form className="form card info-card" onSubmit={handleSubmit}>
+      <div className="field honeypot-field" aria-hidden="true">
+        <label htmlFor="company">Empresa</label>
+        <input
+          id="company"
+          value={payload.company}
+          onChange={(event) => setPayload({ ...payload, company: event.target.value })}
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
       <div className="field-grid">
         <div className="field">
           <label htmlFor="name">Nombre completo</label>
@@ -128,11 +144,18 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
       <div className="inline-actions">
         <button className="button button--primary" type="submit">
           <Send size={18} aria-hidden="true" />
-          Preparar WhatsApp
+          Preparar solicitud
         </button>
         {quoteUrl ? (
           <a className="button button--secondary" href={quoteUrl} target="_blank" rel="noreferrer">
-            Abrir solicitud
+            <MessageCircle size={18} aria-hidden="true" />
+            Enviar por WhatsApp
+          </a>
+        ) : null}
+        {emailUrl ? (
+          <a className="button button--ghost" href={emailUrl}>
+            <Mail size={18} aria-hidden="true" />
+            Enviar por correo
           </a>
         ) : null}
       </div>

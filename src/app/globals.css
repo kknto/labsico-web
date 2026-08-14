@@ -387,6 +387,18 @@ p {
   gap: 8px;
 }
 
+.category-entry {
+  display: grid;
+  gap: 6px;
+}
+
+.category-entry a {
+  justify-self: start;
+  color: var(--brand-blue);
+  font-size: 12px;
+  font-weight: 800;
+}
+
 .category-button {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -430,6 +442,24 @@ p {
 
 .internal-platform-card {
   align-content: start;
+}
+
+.internal-platform-groups {
+  display: grid;
+  gap: 34px;
+}
+
+.internal-platform-group {
+  display: grid;
+  gap: 16px;
+}
+
+.internal-platform-group h2 {
+  font-size: 28px;
+}
+
+.back-link {
+  margin-bottom: 22px;
 }
 
 .service-row {
@@ -553,6 +583,14 @@ p {
   font-weight: 700;
 }
 
+.honeypot-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .contact-band {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -594,6 +632,39 @@ p {
   color: #cbd3e5;
 }
 
+.cta-strip {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  margin-top: 28px;
+  padding: 22px;
+  color: white;
+  background: var(--navy);
+  border-radius: 8px;
+}
+
+.cta-strip p {
+  color: #dce4f7;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 16px;
+  color: white;
+  background: #168a4f;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  font-weight: 900;
+}
+
 @media (max-width: 900px) {
   .nav {
     display: none;
@@ -608,6 +679,7 @@ p {
   .grid--2,
   .section-header,
   .internal-access-header,
+  .cta-strip,
   .services-layout,
   .contact-band {
     grid-template-columns: 1fr;
@@ -646,5 +718,10 @@ p {
 
   .site-footer__inner {
     display: grid;
+  }
+
+  .floating-whatsapp {
+    right: 12px;
+    bottom: 12px;
   }
 }
