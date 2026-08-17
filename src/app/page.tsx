@@ -3,8 +3,11 @@ import { ArrowRight, BadgeCheck, FlaskConical, MessageCircle } from "lucide-reac
 import { accreditations } from "@/content/company";
 import { featuredServices } from "@/content/services";
 import { SectionHeader } from "@/components/SectionHeader";
+import { getSortedCategories } from "@/lib/catalog";
 
 export default function HomePage() {
+  const categories = getSortedCategories();
+
   return (
     <>
       <section className="hero">
@@ -64,6 +67,20 @@ export default function HomePage() {
               </article>
             ))}
           </div>
+          <div className="cta-strip">
+            <FlaskConical size={28} aria-hidden="true" />
+            <div>
+              <strong>Explora por familia de servicio</strong>
+              <p>Accede directamente a las categorias principales para revisar pruebas, normas y datos de cotizacion.</p>
+            </div>
+            <div className="tag-list">
+              {categories.slice(0, 5).map((category) => (
+                <Link className="tag tag--link" href={`/servicios/${category.id}`} key={category.id}>
+                  {category.name}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -85,6 +102,14 @@ export default function HomePage() {
                 <p>{item.description}</p>
               </article>
             ))}
+          </div>
+          <div className="inline-actions" style={{ marginTop: 24 }}>
+            <Link className="button button--primary" href="/acreditacion">
+              Ver acreditacion
+            </Link>
+            <Link className="button button--secondary" href="/contacto">
+              Contactar laboratorio
+            </Link>
           </div>
         </div>
       </section>

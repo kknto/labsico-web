@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
 import { publicContact } from "@/content/company";
 import {
-  buildMailtoUrl,
   buildWhatsAppUrl,
   sanitizeQuotePayload,
   validateQuotePayload,
   type QuotePayload
 } from "@/lib/contact";
+import { sendQuoteEmail } from "@/lib/email";
 
 const WINDOW_MS = 10 * 60 * 1000;
 const MAX_REQUESTS = 6;
@@ -59,13 +59,17 @@ export async function POST(request: Request) {
     name: payload.name!.trim(),
     phone: payload.phone!.trim(),
     email: payload.email?.trim(),
+    company: payload.company?.trim(),
     project: payload.project?.trim(),
+    jobLocation: payload.jobLocation?.trim(),
+    targetDate: payload.targetDate?.trim(),
+    sampleCount: payload.sampleCount?.trim(),
     service: payload.service!.trim(),
     comments: payload.comments?.trim()
   };
 
   const url = buildWhatsAppUrl(publicContact.whatsapp, quotePayload);
-  const emailUrl = buildMailtoUrl(publicContact.email, quotePayload);
+  const email = await sendQuoteEmail(quotePayload);
 
-  return NextResponse.json({ url, emailUrl });
+  return NextResponse.json({ url, email });
 }

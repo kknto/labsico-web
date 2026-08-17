@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Mail, MessageCircle, Send } from "lucide-react";
+import { CheckCircle2, MessageCircle, Send } from "lucide-react";
 import { getAllServices } from "@/lib/catalog";
 import type { QuotePayload } from "@/lib/contact";
 
@@ -11,7 +11,7 @@ type ContactFormProps = {
 
 type ApiResponse = {
   url?: string;
-  emailUrl?: string;
+  email?: { sent: boolean; reason?: string };
   errors?: Record<string, string>;
 };
 
@@ -25,17 +25,21 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
     project: "",
     service: initialService?.name ?? "",
     comments: "",
-    company: ""
+    company: "",
+    jobLocation: "",
+    targetDate: "",
+    sampleCount: "",
+    website: ""
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [quoteUrl, setQuoteUrl] = useState("");
-  const [emailUrl, setEmailUrl] = useState("");
+  const [emailStatus, setEmailStatus] = useState<ApiResponse["email"]>();
   const [startedAt] = useState(() => String(Date.now()));
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setQuoteUrl("");
-    setEmailUrl("");
+    setEmailStatus(undefined);
 
     const response = await fetch("/api/quote-link", {
       method: "POST",
@@ -51,17 +55,17 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
 
     setErrors({});
     setQuoteUrl(data.url ?? "");
-    setEmailUrl(data.emailUrl ?? "");
+    setEmailStatus(data.email);
   }
 
   return (
     <form className="form card info-card" onSubmit={handleSubmit}>
       <div className="field honeypot-field" aria-hidden="true">
-        <label htmlFor="company">Empresa</label>
+        <label htmlFor="website">Sitio web</label>
         <input
-          id="company"
-          value={payload.company}
-          onChange={(event) => setPayload({ ...payload, company: event.target.value })}
+          id="website"
+          value={payload.website}
+          onChange={(event) => setPayload({ ...payload, website: event.target.value })}
           tabIndex={-1}
           autoComplete="off"
         />
@@ -94,6 +98,15 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
       </div>
       <div className="field-grid">
         <div className="field">
+          <label htmlFor="company">Empresa</label>
+          <input
+            id="company"
+            value={payload.company}
+            onChange={(event) => setPayload({ ...payload, company: event.target.value })}
+            maxLength={120}
+          />
+        </div>
+        <div className="field">
           <label htmlFor="email">Correo</label>
           <input
             id="email"
@@ -105,6 +118,8 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
           />
           {errors.email ? <span className="error-text">{errors.email}</span> : null}
         </div>
+      </div>
+      <div className="field-grid">
         <div className="field">
           <label htmlFor="project">Proyecto</label>
           <input
@@ -112,6 +127,35 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
             value={payload.project}
             onChange={(event) => setPayload({ ...payload, project: event.target.value })}
             maxLength={160}
+          />
+        </div>
+        <div className="field">
+          <label htmlFor="jobLocation">Ubicacion de obra</label>
+          <input
+            id="jobLocation"
+            value={payload.jobLocation}
+            onChange={(event) => setPayload({ ...payload, jobLocation: event.target.value })}
+            maxLength={180}
+          />
+        </div>
+      </div>
+      <div className="field-grid">
+        <div className="field">
+          <label htmlFor="targetDate">Fecha tentativa</label>
+          <input
+            id="targetDate"
+            type="date"
+            value={payload.targetDate}
+            onChange={(event) => setPayload({ ...payload, targetDate: event.target.value })}
+          />
+        </div>
+        <div className="field">
+          <label htmlFor="sampleCount">Numero de muestras</label>
+          <input
+            id="sampleCount"
+            value={payload.sampleCount}
+            onChange={(event) => setPayload({ ...payload, sampleCount: event.target.value })}
+            maxLength={80}
           />
         </div>
       </div>
@@ -141,6 +185,16 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
         />
       </div>
       {errors.form ? <span className="error-text">{errors.form}</span> : null}
+      {emailStatus ? (
+        <div className={`form-status ${emailStatus.sent ? "form-status--success" : "form-status--warning"}`}>
+          <CheckCircle2 size={18} aria-hidden="true" />
+          <span>
+            {emailStatus.sent
+              ? "Solicitud enviada por correo. Tambien puedes abrir WhatsApp para dar seguimiento inmediato."
+              : "Solicitud preparada. El correo automatico no esta configurado; usa WhatsApp para enviarla."}
+          </span>
+        </div>
+      ) : null}
       <div className="inline-actions">
         <button className="button button--primary" type="submit">
           <Send size={18} aria-hidden="true" />
@@ -150,12 +204,6 @@ export function ContactForm({ initialServiceSlug }: ContactFormProps) {
           <a className="button button--secondary" href={quoteUrl} target="_blank" rel="noreferrer">
             <MessageCircle size={18} aria-hidden="true" />
             Enviar por WhatsApp
-          </a>
-        ) : null}
-        {emailUrl ? (
-          <a className="button button--ghost" href={emailUrl}>
-            <Mail size={18} aria-hidden="true" />
-            Enviar por correo
           </a>
         ) : null}
       </div>

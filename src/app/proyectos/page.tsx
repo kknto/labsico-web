@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MediaFrame } from "@/components/MediaFrame";
 import { SectionHeader } from "@/components/SectionHeader";
 import { projectCases } from "@/content/company";
 
@@ -20,9 +21,7 @@ export default function ProjectsPage() {
         <div className="grid grid--3">
           {projectCases.map((project) => (
             <article className="card project-card" key={project.id}>
-              <div className="media-placeholder" aria-hidden="true">
-                {project.name.slice(0, 2).toUpperCase()}
-              </div>
+              <MediaFrame image={project.image} label={project.name} />
               <div className="tag-list">
                 {project.services.map((service) => (
                   <span className="tag" key={service}>

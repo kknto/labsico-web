@@ -6,6 +6,10 @@ export type QuotePayload = {
   service?: string;
   comments?: string;
   company?: string;
+  jobLocation?: string;
+  targetDate?: string;
+  sampleCount?: string;
+  website?: string;
   startedAt?: string;
 };
 
@@ -17,6 +21,10 @@ const limits = {
   service: 180,
   comments: 800,
   company: 120,
+  jobLocation: 180,
+  targetDate: 40,
+  sampleCount: 80,
+  website: 120,
   startedAt: 40
 };
 
@@ -33,6 +41,10 @@ export function sanitizeQuotePayload(payload: Partial<QuotePayload>): Partial<Qu
     service: sanitize(payload.service, limits.service),
     comments: sanitize(payload.comments, limits.comments),
     company: sanitize(payload.company, limits.company),
+    jobLocation: sanitize(payload.jobLocation, limits.jobLocation),
+    targetDate: sanitize(payload.targetDate, limits.targetDate),
+    sampleCount: sanitize(payload.sampleCount, limits.sampleCount),
+    website: sanitize(payload.website, limits.website),
     startedAt: sanitize(payload.startedAt, limits.startedAt)
   };
 }
@@ -47,7 +59,11 @@ export function buildQuoteMessage(payload: QuotePayload) {
     payload.name ? `Nombre: ${payload.name}` : null,
     payload.phone ? `Telefono: ${payload.phone}` : null,
     payload.email ? `Correo: ${payload.email}` : null,
+    payload.company ? `Empresa: ${payload.company}` : null,
     payload.project ? `Proyecto: ${payload.project}` : null,
+    payload.jobLocation ? `Ubicacion de obra: ${payload.jobLocation}` : null,
+    payload.targetDate ? `Fecha tentativa: ${payload.targetDate}` : null,
+    payload.sampleCount ? `Numero de muestras: ${payload.sampleCount}` : null,
     payload.service ? `Servicio: ${payload.service}` : null,
     payload.comments ? `Comentarios: ${payload.comments}` : null
   ].filter(Boolean);
@@ -59,12 +75,6 @@ export function buildWhatsAppUrl(whatsappNumber: string, payload: QuotePayload) 
   const number = normalizeWhatsAppNumber(whatsappNumber);
   const text = encodeURIComponent(buildQuoteMessage(payload));
   return `https://wa.me/${number}?text=${text}`;
-}
-
-export function buildMailtoUrl(email: string, payload: QuotePayload) {
-  const subject = encodeURIComponent(`Solicitud de cotizacion LABSICO - ${payload.service || "Servicio"}`);
-  const body = encodeURIComponent(buildQuoteMessage(payload));
-  return `mailto:${email}?subject=${subject}&body=${body}`;
 }
 
 export function validateQuotePayload(payload: Partial<QuotePayload>) {
@@ -82,7 +92,7 @@ export function validateQuotePayload(payload: Partial<QuotePayload>) {
   if (payload.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email)) {
     errors.email = "Indica un correo valido.";
   }
-  if (payload.company) {
+  if (payload.website) {
     errors.form = "Solicitud invalida.";
   }
   if (payload.startedAt) {

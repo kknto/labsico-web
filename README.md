@@ -16,6 +16,8 @@ La app corre en `http://localhost:3000`.
 - `npm run dev`: servidor local.
 - `npm run lint`: revision de Next/ESLint.
 - `npm run typecheck`: TypeScript sin emitir archivos.
+- `npm run catalog:check`: valida categorias, slugs y fichas del catalogo.
+- `npm run test:e2e`: pruebas Playwright de navegacion, servicios, modal, SEO y cotizacion.
 - `npm run build`: build de produccion.
 - `npm run start:render`: start command para Render Web Service.
 
@@ -46,6 +48,13 @@ Variables obligatorias para el acceso interno en produccion:
 - `INTERNAL_ACCESS_CODE`: clave privada de ingreso.
 - `INTERNAL_ACCESS_SECRET`: secreto largo para firmar la cookie de sesion.
 - `INTERNAL_COOKIE_SECURE=true`: fuerza cookies seguras sobre HTTPS.
+
+Variables para envio real de solicitudes por correo:
+
+- `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`: credenciales SMTP.
+- `SMTP_SECURE`: `true` para puerto seguro, `false` para STARTTLS.
+- `SMTP_FROM`: remitente autorizado por el proveedor.
+- `QUOTE_TO_EMAIL`: correo destino de cotizaciones.
 
 ## Despliegue en Render
 

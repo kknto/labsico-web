@@ -16,11 +16,17 @@ export type ServiceItem = {
   featured?: boolean;
 };
 
+export type ContentImage = {
+  src: string;
+  alt: string;
+};
+
 export type ServiceCategory = {
   id: string;
   name: string;
   summary: string;
   seoDescription?: string;
+  image?: ContentImage;
   order: number;
   accent: "red" | "blue" | "steel" | "green";
   items: ServiceItem[];
@@ -34,6 +40,7 @@ export type ProjectCase = {
   period: string;
   services: string[];
   summary: string;
+  image?: ContentImage;
   detail?: string;
 };
 

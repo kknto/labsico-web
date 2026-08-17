@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ChevronRight, Search } from "lucide-react";
 import { getAllServices, getSortedCategories } from "@/lib/catalog";
 import type { ServiceItem } from "@/content/types";
@@ -13,10 +14,13 @@ type SearchParams = {
 };
 
 export function ServicesExplorer({ initialCategory, initialService }: SearchParams) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   const categories = useMemo(() => getSortedCategories(), []);
   const services = useMemo(() => getAllServices(), []);
   const [activeCategory, setActiveCategory] = useState(initialCategory ?? categories[0]?.id ?? "");
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(searchParams.get("q") ?? "");
   const [selectedService, setSelectedService] = useState<
     (ServiceItem & { categoryName: string; categoryAccent: string }) | null
   >(() => services.find((service) => service.slug === initialService) ?? null);
@@ -35,6 +39,51 @@ export function ServicesExplorer({ initialCategory, initialService }: SearchPara
     return matchesCategory && haystack.includes(query.toLowerCase().trim());
   });
 
+  function updateUrl(next: { category?: string; service?: string | null; query?: string }) {
+    const params = new URLSearchParams(searchParams.toString());
+    const category = next.category ?? activeCategory;
+    const normalizedQuery = next.query ?? query;
+
+    if (category && category !== categories[0]?.id) {
+      params.set("categoria", category);
+    } else {
+      params.delete("categoria");
+    }
+
+    if (next.service) {
+      params.set("prueba", next.service);
+    } else if (next.service === null) {
+      params.delete("prueba");
+    }
+
+    if (normalizedQuery.trim()) {
+      params.set("q", normalizedQuery.trim());
+    } else {
+      params.delete("q");
+    }
+
+    const suffix = params.toString();
+    router.replace(suffix ? `${pathname}?${suffix}` : pathname, { scroll: false });
+  }
+
+  function selectCategory(categoryId: string) {
+    setActiveCategory(categoryId);
+    updateUrl({ category: categoryId, service: null });
+  }
+
+  function selectService(service: ServiceItem & { categoryName: string; categoryAccent: string }) {
+    setSelectedService(service);
+    updateUrl({ category: service.categoryId, service: service.slug });
+  }
+
+  function clearFilters() {
+    const defaultCategory = categories[0]?.id ?? "";
+    setActiveCategory(defaultCategory);
+    setQuery("");
+    setSelectedService(null);
+    router.replace(pathname, { scroll: false });
+  }
+
   return (
     <>
       <div className="services-layout">
@@ -51,7 +100,10 @@ export function ServicesExplorer({ initialCategory, initialService }: SearchPara
                 className="search-field"
                 style={{ paddingLeft: 38 }}
                 value={query}
-                onChange={(event) => setQuery(event.target.value)}
+                onChange={(event) => {
+                  setQuery(event.target.value);
+                  updateUrl({ query: event.target.value });
+                }}
                 placeholder="Ej. revenimiento, ASTM C39"
               />
             </span>
@@ -61,7 +113,7 @@ export function ServicesExplorer({ initialCategory, initialService }: SearchPara
               className="category-button"
               type="button"
               aria-pressed={activeCategory === "todos"}
-              onClick={() => setActiveCategory("todos")}
+              onClick={() => selectCategory("todos")}
             >
               Todos los servicios
               <span>{services.length}</span>
@@ -72,7 +124,7 @@ export function ServicesExplorer({ initialCategory, initialService }: SearchPara
                   className="category-button"
                   type="button"
                   aria-pressed={activeCategory === category.id}
-                  onClick={() => setActiveCategory(category.id)}
+                  onClick={() => selectCategory(category.id)}
                 >
                   {category.name}
                   <span>{category.items.length}</span>
@@ -86,6 +138,17 @@ export function ServicesExplorer({ initialCategory, initialService }: SearchPara
           <p>
             {filteredServices.length} resultado{filteredServices.length === 1 ? "" : "s"}
           </p>
+          {!filteredServices.length ? (
+            <article className="service-row card">
+              <div>
+                <h3>Sin resultados</h3>
+                <p>No encontramos pruebas que coincidan con la busqueda actual.</p>
+              </div>
+              <button className="button button--secondary" type="button" onClick={clearFilters}>
+                Ver todos
+              </button>
+            </article>
+          ) : null}
           {filteredServices.map((service) => (
             <article className="service-row card" key={service.id}>
               <div>
@@ -104,7 +167,7 @@ export function ServicesExplorer({ initialCategory, initialService }: SearchPara
                   <span className="tag">{service.sample}</span>
                 </div>
               </div>
-              <button className="button button--secondary" type="button" onClick={() => setSelectedService(service)}>
+              <button className="button button--secondary" type="button" onClick={() => selectService(service)}>
                 Ver ficha
                 <ChevronRight size={18} aria-hidden="true" />
               </button>
@@ -112,7 +175,15 @@ export function ServicesExplorer({ initialCategory, initialService }: SearchPara
           ))}
         </section>
       </div>
-      {selectedService ? <ServiceModal service={selectedService} onClose={() => setSelectedService(null)} /> : null}
+      {selectedService ? (
+        <ServiceModal
+          service={selectedService}
+          onClose={() => {
+            setSelectedService(null);
+            updateUrl({ service: null });
+          }}
+        />
+      ) : null}
     </>
   );
 }

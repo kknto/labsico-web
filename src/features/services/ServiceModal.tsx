@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { MessageCircle, X } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import { Modal } from "@/components/ui/Modal";
 import { publicContact } from "@/content/company";
 import { buildWhatsAppUrl } from "@/lib/contact";
 import type { ServiceItem } from "@/content/types";
@@ -13,7 +13,6 @@ type ServiceModalProps = {
 };
 
 export function ServiceModal({ service, onClose }: ServiceModalProps) {
-  const closeButtonRef = useRef<HTMLButtonElement>(null);
   const quoteUrl = buildWhatsAppUrl(publicContact.whatsapp, {
     name: "",
     phone: "",
@@ -21,39 +20,9 @@ export function ServiceModal({ service, onClose }: ServiceModalProps) {
     comments: `Me interesa recibir informacion y cotizacion para ${service.name}.`
   });
 
-  useEffect(() => {
-    closeButtonRef.current?.focus();
-
-    function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        onClose();
-      }
-    }
-
-    document.addEventListener("keydown", onKeyDown);
-    return () => document.removeEventListener("keydown", onKeyDown);
-  }, [onClose]);
-
   return (
-    <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
-      <section
-        className="modal"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="service-modal-title"
-        onMouseDown={(event) => event.stopPropagation()}
-      >
-        <div className="modal__header">
-          <div>
-            <span className="tag">{service.categoryName}</span>
-            <h2 id="service-modal-title">{service.name}</h2>
-          </div>
-          <button ref={closeButtonRef} className="icon-button" type="button" onClick={onClose} aria-label="Cerrar">
-            <X size={20} aria-hidden="true" />
-          </button>
-        </div>
-        <div className="modal__body">
-          <p>{service.description}</p>
+    <Modal title={service.name} eyebrow={service.categoryName} onClose={onClose}>
+      <p>{service.description}</p>
           <div className="definition-grid">
             <div className="definition">
               <strong>Normas</strong>
@@ -129,8 +98,6 @@ export function ServiceModal({ service, onClose }: ServiceModalProps) {
               Completar formulario
             </Link>
           </div>
-        </div>
-      </section>
-    </div>
+    </Modal>
   );
 }

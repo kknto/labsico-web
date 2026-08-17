@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { ArrowLeft, FlaskConical } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
+import { MediaFrame } from "@/components/MediaFrame";
 import { SectionHeader } from "@/components/SectionHeader";
+import { StructuredData } from "@/components/StructuredData";
 import { ServicesExplorer } from "@/features/services/ServicesExplorer";
 import { findCategoryById, getSortedCategories } from "@/lib/catalog";
 
@@ -56,6 +59,13 @@ export default async function ServiceCategoryPage({ params }: CategoryPageProps)
             <ArrowLeft size={18} aria-hidden="true" />
             Todos los servicios
           </Link>
+          <nav className="breadcrumbs" aria-label="Ruta de navegacion">
+            <Link href="/">Inicio</Link>
+            <span>/</span>
+            <Link href="/servicios">Servicios</Link>
+            <span>/</span>
+            <span>{category.name}</span>
+          </nav>
           <SectionHeader
             eyebrow="Categoria de servicio"
             title={category.name}
@@ -63,6 +73,7 @@ export default async function ServiceCategoryPage({ params }: CategoryPageProps)
           />
           <div className="grid grid--3">
             <article className="card info-card">
+              <MediaFrame image={category.image} label={category.name} />
               <FlaskConical color="var(--brand-red)" size={28} aria-hidden="true" />
               <h3>{category.items.length} servicios disponibles</h3>
               <p>{category.summary}</p>
@@ -88,7 +99,9 @@ export default async function ServiceCategoryPage({ params }: CategoryPageProps)
             title={`Pruebas de ${category.name}`}
             description="Filtra por nombre, norma o alcance y abre la ficha para solicitar cotizacion del servicio exacto."
           />
-          <ServicesExplorer initialCategory={category.id} />
+          <Suspense fallback={<p>Cargando catalogo...</p>}>
+            <ServicesExplorer initialCategory={category.id} />
+          </Suspense>
         </div>
       </section>
 
@@ -102,6 +115,31 @@ export default async function ServiceCategoryPage({ params }: CategoryPageProps)
           <ContactForm />
         </div>
       </section>
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: category.name,
+          provider: {
+            "@type": "LocalBusiness",
+            name: "LABSICO"
+          },
+          areaServed: "Quintana Roo",
+          description: category.seoDescription ?? category.summary,
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: `Servicios de ${category.name}`,
+            itemListElement: category.items.slice(0, 20).map((service) => ({
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: service.name,
+                description: service.description
+              }
+            }))
+          }
+        }}
+      />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { ServicesExplorer } from "@/features/services/ServicesExplorer";
 import { SectionHeader } from "@/components/SectionHeader";
 
@@ -26,7 +27,9 @@ export default async function ServicesPage({ searchParams }: ServicesPageProps) 
           title="Catalogo modular de pruebas y servicios"
           description="Explora por familia, filtra por norma o abre una ficha tecnica-comercial para solicitar cotizacion del servicio especifico."
         />
-        <ServicesExplorer initialCategory={params.categoria} initialService={params.prueba} />
+        <Suspense fallback={<p>Cargando catalogo...</p>}>
+          <ServicesExplorer initialCategory={params.categoria} initialService={params.prueba} />
+        </Suspense>
       </div>
     </section>
   );
